@@ -1,0 +1,346 @@
+/* Базовые анимации */
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes slideDownTop {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(20px);
+    }
+    60% {
+        transform: scale(1.05) translateY(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+}
+
+@keyframes rotateIn {
+    from {
+      opacity: 0;
+      transform: rotate(-5deg) translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: rotate(0deg) translateY(0);
+    }
+}
+  
+@keyframes float {
+    0%, 100% { 
+        transform: translate(0px, 0px) scale(1); 
+    }
+    33% { 
+        transform: translate(30px, -30px) scale(1.1); 
+    }
+    66% { 
+        transform: translate(-20px, 20px) scale(0.9); 
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 75%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 25%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    }
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5);
+    }
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-10px) rotate(1deg);
+    }
+    75% {
+        transform: translateY(10px) rotate(-1deg);
+    }
+}
+
+/* ЖИДКОЕ СТЕКЛО */
+.liquid-glass-block {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.liquid-glass-block:hover {
+    box-shadow: 
+        0 16px 48px 0 rgba(31, 38, 135, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+}
+
+.liquid-glass-block::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.1) 50%,
+        transparent 70%
+    );
+    transform: rotate(0deg);
+    transition: transform 0.6s ease;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.liquid-glass-block:hover::before {
+    opacity: 1;
+    transform: rotate(45deg);
+}
+
+.liquid-highlight,
+.liquid-reflection {
+    transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
+@keyframes titleEntrance {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ОПТИМИЗАЦИЯ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ */
+@media (max-width: 768px) {
+    /* Упрощаем анимации на мобильных */
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInScale {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Отключаем сложные анимации */
+    @keyframes float {
+        0%, 100% { 
+            transform: translate(0px, 0px); 
+        }
+    }
+
+    @keyframes gradientShift {
+        0%, 100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    /* Упрощаем эффекты для жидкого стекла */
+    .liquid-glass-block {
+        will-change: auto;
+    }
+
+    .liquid-glass-block:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px 0 rgba(31, 38, 135, 0.4);
+    }
+    
+    .liquid-glass-block::before {
+        display: none;
+    }
+
+    /* Отключаем анимации pulse и wave на мобильных */
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes wave {
+        0%, 100% {
+            transform: translateY(0);
+        }
+    }
+}
+
+/* Для очень маленьких экранов - минимум анимаций */
+@media (max-width: 480px) {
+    .liquid-glass-block:hover {
+        transform: none;
+    }
+    
+    /* Отключаем все декоративные анимации */
+    @keyframes float {
+        0%, 100% {
+            transform: none;
+        }
+    }
+    
+    @keyframes pulse {
+        0%, 100% {
+            transform: none;
+        }
+    }
+    
+    @keyframes wave {
+        0%, 100% {
+            transform: none;
+        }
+    }
+    
+    @keyframes rotate {
+        0%, 100% {
+            transform: none;
+        }
+    }
+}
+
+/* Отключение анимаций для устройств с низкой производительностью */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
