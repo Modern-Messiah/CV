@@ -20,6 +20,9 @@ const translations = {
     location: "Казахстан, Павлодар",
     github: "github.com/Modern-Messiah",
     telegram: "@Inf1n1teVoid",
+    linkedin: "www.linkedin.com/in/vladimir-chiglintsev-9092b3321",
+    headhunter: "pavlodar.hh.kz/resume/ab79d06cff0d80e57f0039ed1f61695244756d",
+
 
     // Experience
     experienceTitle: "💼 Опыт работы",
@@ -203,6 +206,8 @@ const translations = {
     location: "Kazakhstan, Pavlodar",
     github: "github.com/Modern-Messiah",
     telegram: "@Inf1n1teVoid",
+    linkedin: "www.linkedin.com/in/vladimir-chiglintsev-9092b3321",
+    headhunter: "pavlodar.hh.kz/resume/ab79d06cff0d80e57f0039ed1f61695244756d",
 
     // Experience
     experienceTitle: "💼 Work Experience",

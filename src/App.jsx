@@ -125,7 +125,9 @@ function App() {
                       phone: t.phone,
                       location: t.location,
                       github: t.github,
-                      telegram: t.telegram
+                      telegram: t.telegram,
+                      linkedin: t.linkedin,
+                      headhunter: t.headhunter
                     }}
                   />
                 </div>
@@ -181,7 +183,9 @@ function App() {
                       phone: t.phone,
                       location: t.location,
                       github: t.github,
-                      telegram: t.telegram
+                      telegram: t.telegram,
+                      linkedin: t.linkedin,
+                      headhunter: t.headhunter
                     }}
                   />
                 </div>
