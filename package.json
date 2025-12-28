@@ -1,9 +1,9 @@
 {
-  "name": "my-resume",
+  "name": "CV",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://xpl0itK3y.github.io/my-resume",
+  "homepage": "https://xpl0itK3y.github.io/CV",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
