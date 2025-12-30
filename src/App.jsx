@@ -150,9 +150,11 @@ function App() {
                   <Skills
                     skillsTitle={t.skillsTitle}
                     softSkillsTitle={t.softSkillsTitle}
+                    languagesTitle={t.languagesTitle}
                     skills={{
                       technical: t.technicalSkills,
                       soft: t.softSkills,
+                      languages: t.languages,
                     }}
                   />
                 </div>
@@ -188,7 +190,7 @@ function App() {
                     title={t.contactsTitle}
                     contacts={{
                       email: t.email,
-                      //phone: t.phone,
+                      // phone: t.phone,
                       location: t.location,
                       github: t.github,
                       telegram: t.telegram,
@@ -207,9 +209,11 @@ function App() {
                   <Skills
                     skillsTitle={t.skillsTitle}
                     softSkillsTitle={t.softSkillsTitle}
+                    languagesTitle={t.languagesTitle}
                     skills={{
                       technical: t.technicalSkills,
                       soft: t.softSkills,
+                      languages: t.languages,
                     }}
                   />
                 </div>

@@ -114,7 +114,8 @@ const translations = {
 
     // Skills
     skillsTitle: "🚀 Технические навыки",
-    softSkillsTitle: "💡 Soft Skills",
+    softSkillsTitle: "💡 Мягкие навыки",
+    languagesTitle: "🌐 Языки",
     technicalSkills: [
       // Frontend
       { name: "React / Next.js", level: 90 },
@@ -157,7 +158,6 @@ const translations = {
     softSkills: [
       "Командная работа",
       "Agile/Scrum",
-      "Английский (B2)",
       "Креативность",
       "Самоорганизация",
       "Быстрое обучение",
@@ -165,6 +165,10 @@ const translations = {
       "Внимание к деталям",
       "Техническая документация",
       "Аналитическое мышление",
+    ],
+    languages: [
+      { name: "Русский", level: "C2 - Родной" },
+      { name: "Английский", level: "B2 - Средний" },
     ],
 
     // Projects
@@ -300,6 +304,7 @@ const translations = {
     // Skills
     skillsTitle: "🚀 Technical Skills",
     softSkillsTitle: "💡 Soft Skills",
+    languagesTitle: "🌐 Languages",
     technicalSkills: [
       // Frontend
       { name: "React / Next.js", level: 90 },
@@ -342,7 +347,6 @@ const translations = {
     softSkills: [
       "Team Collaboration",
       "Agile/Scrum",
-      "English (B2)",
       "Creativity",
       "Self-Organization",
       "Fast Learning",
@@ -350,6 +354,10 @@ const translations = {
       "Attention to Detail",
       "Technical Documentation",
       "Analytical Thinking",
+    ],
+    languages: [
+      { name: "Russian", level: "C2 - Native" },
+      { name: "English", level: "B2 - Intermediate" },
     ],
 
     // Projects
